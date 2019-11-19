@@ -7,7 +7,8 @@
     "start:dev": "nodemon",
     "start": "npm run build:prod; node ./build/index.js",
     "build:prod": "rimraf ./build; tsc",
-    "tests:unit": "mocha -r ts-node/register ./test/**/*.unit.ts"
+    "tests:unit": "mocha -r ts-node/register ./test/**/*.unit.ts",
+    "tests:e2e": "./node_modules/.bin/cucumber-js -p default"
   },
   "keywords": [],
   "author": "",
